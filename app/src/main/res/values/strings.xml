@@ -3,4 +3,9 @@
     <string name="title_home">FAQ</string>
     <string name="title_dashboard">Calcul</string>
     <string name="title_notifications">Chat</string>
+
+    <string name="fragment_faq_title">Ceci est le fragment FAQ</string>
+    <string name="fragment_calcul_title">Ceci est le fragment Calcul</string>
+    <string name="fragment_chat_title">Ceci est le fragment Chat</string>
+
 </resources>

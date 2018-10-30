@@ -17,22 +17,22 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
+                case R.id.navigation_faq:
                     FAQ faq = new FAQ();
                     fragmentManager.beginTransaction()
-                            .replace(R.id.container, faq)
+                            .replace(R.id.fragment, faq)
                             .commit();
                     return true;
-                case R.id.navigation_dashboard:
+                case R.id.navigation_calcul:
                     Calcul calcul = new Calcul();
                     fragmentManager.beginTransaction()
-                            .replace(R.id.container, calcul)
+                            .replace(R.id.fragment, calcul)
                             .commit();
                     return true;
-                case R.id.navigation_notifications:
+                case R.id.navigation_chat:
                     Chat chat = new Chat();
                     fragmentManager.beginTransaction()
-                            .replace(R.id.container, chat)
+                            .replace(R.id.fragment, chat)
                             .commit();
                     return true;
             }

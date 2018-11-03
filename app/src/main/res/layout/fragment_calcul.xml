@@ -24,13 +24,13 @@
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <AutoCompleteTextView
-                    android:id="@+id/autoCompleteTextView"
+                <Button
+                    android:id="@+id/button3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="AJOUT"
-                    android:visibility="visible" />
-
+                    android:layout_weight="1"
+                    android:text="ajout"
+                    android:onClick="pageajout"/>
             </LinearLayout>
 
             <LinearLayout
@@ -38,68 +38,32 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/button5"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="produits" />
 
                 <Button
                     android:id="@+id/button4"
-                    android:layout_width="0dp"
+
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="enrichissement alcool" />
+                    android:text="conversion"
+                    android:onClick="pageaconversion"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button3"
-                    android:layout_width="0dp"
+                    android:id="@+id/button10"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="enirchissement sucre" />
+                    android:text="sulfitage"
+                    android:onClick="pagesulfitage"/>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <AutoCompleteTextView
-                    android:id="@+id/autoCompleteTextView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="AutoCompleteTextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <AutoCompleteTextView
-                    android:id="@+id/autoCompleteTextView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="AutoCompleteTextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal"></LinearLayout>
         </LinearLayout>
     </android.support.constraint.ConstraintLayout>
 </FrameLayout>

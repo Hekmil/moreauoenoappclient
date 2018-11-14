@@ -129,13 +129,11 @@
                     android:hint="Resultat"
                     android:inputType="numberDecimal" />
 
-                <TextView
-                    android:id="@+id/textView14"
+                <Spinner
+                    android:id="@+id/spinner1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="grammes"
-                    app:autoSizeTextType="uniform" />
+                    android:layout_weight="1" />
             </LinearLayout>
         </LinearLayout>
 
@@ -194,13 +192,11 @@
                     android:hint="Resultat"
                     android:inputType="numberDecimal" />
 
-                <TextView
-                    android:id="@+id/textView15"
+                <Spinner
+                    android:id="@+id/spinner1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="centilitres"
-                    app:autoSizeTextType="uniform" />
+                    android:layout_weight="1" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

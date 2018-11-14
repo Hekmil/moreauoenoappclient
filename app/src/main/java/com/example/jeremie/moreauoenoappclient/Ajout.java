@@ -35,14 +35,22 @@ public class Ajout extends AppCompatActivity {
 
         spinner1 = findViewById(R.id.spinner1);
         spinner2 = findViewById(R.id.spinner2);
+        spinner3 = findViewById(R.id.spinner3);
+        spinner4 = findViewById(R.id.spinner4);
 
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.concentrationsm2_array, android.R.layout.simple_spinner_item);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.concentrationsv2_array, android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this, R.array.masses_array, android.R.layout.simple_spinner_item);
+        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this, R.array.volumes_array, android.R.layout.simple_spinner_item);
+        adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         spinner1.setAdapter(adapter1);
         spinner2.setAdapter(adapter2);
+        spinner3.setAdapter(adapter3);
+        spinner4.setAdapter(adapter4);
 
         editText1.addTextChangedListener(new TextWatcher() {
             @Override

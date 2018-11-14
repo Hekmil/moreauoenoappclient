@@ -19,6 +19,8 @@ public class Ajout extends AppCompatActivity {
 
     Spinner spinner1;
     Spinner spinner2;
+    Spinner spinner3;
+    Spinner spinner4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

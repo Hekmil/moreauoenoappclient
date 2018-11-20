@@ -121,16 +121,15 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <EditText
-                    android:id="@+id/edittext3"
+                <TextView
+                    android:id="@+id/textview1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:hint="Resultat"
-                    android:inputType="numberDecimal" />
+                    android:hint="Resultat"/>
 
                 <Spinner
-                    android:id="@+id/spinner3"
+                    android:id="@+id/spinner2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
@@ -164,7 +163,7 @@
 
 
                 <EditText
-                    android:id="@+id/edittext4"
+                    android:id="@+id/edittext3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -172,7 +171,7 @@
                     android:inputType="numberDecimal" />
 
                 <Spinner
-                    android:id="@+id/spinner2"
+                    android:id="@+id/spinner3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
@@ -184,8 +183,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <EditText
-                    android:id="@+id/edittext5"
+                <TextView
+                    android:id="@+id/textview2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"

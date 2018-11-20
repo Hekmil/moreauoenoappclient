@@ -12,29 +12,28 @@ import android.widget.Spinner;
 
 public class Conversion extends AppCompatActivity {
 
-    Spinner spinner1;
-    Spinner spinner2;
-    Spinner spinner3;
-    Spinner spinner4;
-    Spinner spinner5;
-    Spinner spinner6;
-    Spinner spinner7;
-    Spinner spinner8;
+    private Spinner spinner1;
+    private Spinner spinner2;
+    private Spinner spinner3;
+    private Spinner spinner4;
+    private Spinner spinner5;
+    private Spinner spinner6;
+    private Spinner spinner7;
+    private Spinner spinner8;
 
-    EditText editText1;
-    EditText editText2;
-    EditText editText3;
-    EditText editText4;
-    EditText editText5;
-    EditText editText6;
-    EditText editText7;
-    EditText editText8;
+    private EditText editText1;
+    private EditText editText2;
+    private EditText editText3;
+    private EditText editText4;
+    private EditText editText5;
+    private EditText editText6;
+    private EditText editText7;
+    private EditText editText8;
 
-    boolean updateEditText1 = false;
-    boolean updateEditText2 = false;
-    boolean updateEditText3 = false;
-    boolean updateEditText4 = false;
-
+    private boolean updateEditText1 = false;
+    private boolean updateEditText2 = false;
+    private boolean updateEditText3 = false;
+    private boolean updateEditText4 = false;
 
 
     @Override
@@ -61,7 +60,6 @@ public class Conversion extends AppCompatActivity {
         editText8 = findViewById(R.id.edittext8);
 
 
-
         // initialisation des spinner
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.masses_array, android.R.layout.simple_spinner_item);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -74,11 +72,6 @@ public class Conversion extends AppCompatActivity {
 
         ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this, R.array.concentrationsv_array, android.R.layout.simple_spinner_item);
         adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-
-
-
-
 
 
         spinner1.setAdapter(adapter1);
@@ -110,7 +103,7 @@ public class Conversion extends AppCompatActivity {
         });
 
 
-        //initialisation des edittext
+        //initialisation des editText
         editText1.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -124,7 +117,6 @@ public class Conversion extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-
                 updateConversionmasses(s.toString(), editText2, spinner1, spinner2);
             }
 
@@ -148,15 +140,6 @@ public class Conversion extends AppCompatActivity {
 
             }
         });
-
-
-
-
-
-
-
-
-
 
 
         spinner3.setAdapter(adapter2);
@@ -225,14 +208,6 @@ public class Conversion extends AppCompatActivity {
         });
 
 
-
-
-
-
-
-
-
-
         spinner5.setAdapter(adapter3);
         spinner6.setAdapter(adapter3);
 
@@ -299,10 +274,6 @@ public class Conversion extends AppCompatActivity {
         });
 
 
-
-
-
-
         spinner7.setAdapter(adapter4);
         spinner8.setAdapter(adapter4);
 
@@ -362,47 +333,15 @@ public class Conversion extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-
                 updateConversionconcentrationv(s.toString(), editText7, spinner8, spinner7);
-
             }
         });
-
-
-
-
 
 
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public void updateConversionmasses(String masseDepart, EditText editTextArrivee, Spinner spinnerDepart, Spinner spinnerArrivee){
+    public void updateConversionmasses(String masseDepart, EditText editTextArrivee, Spinner spinnerDepart, Spinner spinnerArrivee) {
         if (updateEditText1)
             return;
         int masseDepartPos = spinnerDepart.getSelectedItemPosition();
@@ -422,59 +361,57 @@ public class Conversion extends AppCompatActivity {
     }
 
 
-
-
-    public void updateConversionvolumes(String volumeDepart, EditText editTextArrivee, Spinner spinnerDepart, Spinner spinnerArrivee){
+    public void updateConversionvolumes(String volumeDepart, EditText editTextArrivee, Spinner spinnerDepart, Spinner spinnerArrivee) {
         if (updateEditText2)
             return;
         int volumeDepartPos = spinnerDepart.getSelectedItemPosition();
         int volumeArriveePos = spinnerArrivee.getSelectedItemPosition();
-        double volumeDepartD = 0;
+        double volumeDepartD;
         try {
             volumeDepartD = Double.parseDouble(volumeDepart);
         } catch (Exception e) {
             return;
         }
         double valeurConvertie = conversionvolumes(volumeDepartPos, volumeArriveePos, volumeDepartD);
-        valeurConvertie = Math.round(valeurConvertie * 10000) / (double) 10000;
+        valeurConvertie = Math.round(valeurConvertie * 100000) / (double) 100000;
 
         updateEditText2 = true;
         editTextArrivee.setText(valeurConvertie + "");
         updateEditText2 = false;
     }
 
-    public void updateConversionconcentrationm(String concentrationmDepart, EditText editTextArrivee, Spinner spinnerDepart, Spinner spinnerArrivee){
+    public void updateConversionconcentrationm(String concentrationmDepart, EditText editTextArrivee, Spinner spinnerDepart, Spinner spinnerArrivee) {
         if (updateEditText3)
             return;
         int concentrationmDepartPos = spinnerDepart.getSelectedItemPosition();
         int concentrationmArriveePos = spinnerArrivee.getSelectedItemPosition();
-        double concentrationmDepartD = 0;
+        double concentrationmDepartD;
         try {
             concentrationmDepartD = Double.parseDouble(concentrationmDepart);
         } catch (Exception e) {
             return;
         }
         double valeurConvertie = conversionconcentrationm(concentrationmDepartPos, concentrationmArriveePos, concentrationmDepartD);
-        valeurConvertie = Math.round(valeurConvertie * 10000) / (double) 10000;
+        valeurConvertie = Math.round(valeurConvertie * 100000) / (double) 100000;
 
         updateEditText3 = true;
         editTextArrivee.setText(valeurConvertie + "");
         updateEditText3 = false;
     }
 
-    public void updateConversionconcentrationv(String concentrationvDepart, EditText editTextArrivee, Spinner spinnerDepart, Spinner spinnerArrivee){
+    public void updateConversionconcentrationv(String concentrationvDepart, EditText editTextArrivee, Spinner spinnerDepart, Spinner spinnerArrivee) {
         if (updateEditText4)
             return;
         int concentrationvDepartPos = spinnerDepart.getSelectedItemPosition();
         int concentrationvArriveePos = spinnerArrivee.getSelectedItemPosition();
-        double concentrationvDepartD = 0;
+        double concentrationvDepartD;
         try {
             concentrationvDepartD = Double.parseDouble(concentrationvDepart);
         } catch (Exception e) {
             return;
         }
         double valeurConvertie = conversionconcentrationv(concentrationvDepartPos, concentrationvArriveePos, concentrationvDepartD);
-        valeurConvertie = Math.round(valeurConvertie * 10000) / (double) 10000;
+        valeurConvertie = Math.round(valeurConvertie * 100000) / (double) 100000;
 
         updateEditText4 = true;
         editTextArrivee.setText(valeurConvertie + "");
@@ -482,61 +419,43 @@ public class Conversion extends AppCompatActivity {
     }
 
 
+    public double conversionmasses(int masseDepartPos, int masseArriveePos, double masseDepart) {
+        String[] tauxArray1 = getResources().getStringArray(R.array.masses_taux_array);
+        double taux1 = Double.parseDouble(tauxArray1[masseDepartPos]);
+        double taux2 = Double.parseDouble(tauxArray1[masseArriveePos]);
+        double valeurGramme = masseDepart * taux1;
+        double valeurArrivee = valeurGramme * (1 / taux2);
+        return valeurArrivee;
+    }
 
 
-
-
-
-
-
-
-    public double conversionmasses (int masseDepartPos, int masseArriveePos, double masseDepart){
-            String[] tauxArray1 = getResources().getStringArray(R.array.masses_taux_array);
-            Double taux1 = Double.parseDouble(tauxArray1[masseDepartPos]);
-            Double taux2 = Double.parseDouble(tauxArray1[masseArriveePos]);
-            double valeurGramme = masseDepart * taux1;
-            double valeurArrivee = valeurGramme * (1/taux2);
-            return valeurArrivee;
-        }
-
-
-
-
-
-
-
-
-    public double conversionvolumes (int volumeDepartPos, int volumeArriveePos, double volumeDepart){
+    public double conversionvolumes(int volumeDepartPos, int volumeArriveePos, double volumeDepart) {
         String[] tauxArray2 = getResources().getStringArray(R.array.volumes_taux_array);
-        Double taux1 = Double.parseDouble(tauxArray2[volumeDepartPos]);
-        Double taux2 = Double.parseDouble(tauxArray2[volumeArriveePos]);
+        double taux1 = Double.parseDouble(tauxArray2[volumeDepartPos]);
+        double taux2 = Double.parseDouble(tauxArray2[volumeArriveePos]);
         double valeurLitre = volumeDepart * taux1;
-        double valeurArrivee = valeurLitre * (1/taux2);
+        double valeurArrivee = valeurLitre * (1 / taux2);
         return valeurArrivee;
     }
 
-    public double conversionconcentrationm (int concentrationmDepartPos, int concentrationmArriveePos, double concentrationmDepart){
+    public double conversionconcentrationm(int concentrationmDepartPos, int concentrationmArriveePos, double concentrationmDepart) {
         String[] tauxArray3 = getResources().getStringArray(R.array.concentrationm_taux_array);
-        Double taux1 = Double.parseDouble(tauxArray3[concentrationmDepartPos]);
-        Double taux2 = Double.parseDouble(tauxArray3[concentrationmArriveePos]);
+        double taux1 = Double.parseDouble(tauxArray3[concentrationmDepartPos]);
+        double taux2 = Double.parseDouble(tauxArray3[concentrationmArriveePos]);
         double valeurConcentration = concentrationmDepart * taux1;
-        double valeurArrivee = valeurConcentration * (1/taux2);
+        double valeurArrivee = valeurConcentration * (1 / taux2);
         return valeurArrivee;
     }
 
 
-    public double conversionconcentrationv (int concentrationvDepartPos, int concentrationvArriveePos, double concentrationvDepart){
+    public double conversionconcentrationv(int concentrationvDepartPos, int concentrationvArriveePos, double concentrationvDepart) {
         String[] tauxArray4 = getResources().getStringArray(R.array.concentrationv_taux_array);
-        Double taux1 = Double.parseDouble(tauxArray4[concentrationvDepartPos]);
-        Double taux2 = Double.parseDouble(tauxArray4[concentrationvArriveePos]);
-        double valeurConcentration = concentrationvDepart * taux1;
-        double valeurArrivee = valeurConcentration * (1/taux2);
+        double taux1 = Double.parseDouble(tauxArray4[concentrationvDepartPos]);
+        double taux2 = Double.parseDouble(tauxArray4[concentrationvArriveePos]);
+        double valeurConcentration = concentrationvDepart / taux1;
+        double valeurArrivee = valeurConcentration * (1 / taux2);
         return valeurArrivee;
     }
-
-
-
-
 
 
 }

@@ -75,4 +75,15 @@
         <item>1</item>
     </string-array>
 
+
+    <string-array name="concentrationPourcentage">
+        <item>5%</item>
+        <item>10%</item>
+    </string-array>
+
+    <string-array name="volumeCuve">
+        <item>Hecolitres</item>
+        <item>Pieces</item>
+    </string-array>
+
 </resources>

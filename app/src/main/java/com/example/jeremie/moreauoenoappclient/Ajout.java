@@ -201,8 +201,8 @@ public class Ajout extends AppCompatActivity {
             return;
         int unitDepart = spinnerDepart.getSelectedItemPosition();
         int unitArrivee = spinnerArrivee.getSelectedItemPosition();
-        double volumeVal = 0;
-        double liquideVal = 0;
+        double volumeVal;
+        double liquideVal;
         try {
             volumeVal = Double.parseDouble(volume);
             liquideVal = Double.parseDouble(liquide);

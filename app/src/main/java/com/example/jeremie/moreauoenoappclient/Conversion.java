@@ -366,7 +366,7 @@ public class Conversion extends AppCompatActivity {
             return;
         int volumeDepartPos = spinnerDepart.getSelectedItemPosition();
         int volumeArriveePos = spinnerArrivee.getSelectedItemPosition();
-        double volumeDepartD = 0;
+        double volumeDepartD;
         try {
             volumeDepartD = Double.parseDouble(volumeDepart);
         } catch (Exception e) {
@@ -385,7 +385,7 @@ public class Conversion extends AppCompatActivity {
             return;
         int concentrationmDepartPos = spinnerDepart.getSelectedItemPosition();
         int concentrationmArriveePos = spinnerArrivee.getSelectedItemPosition();
-        double concentrationmDepartD = 0;
+        double concentrationmDepartD;
         try {
             concentrationmDepartD = Double.parseDouble(concentrationmDepart);
         } catch (Exception e) {
@@ -404,7 +404,7 @@ public class Conversion extends AppCompatActivity {
             return;
         int concentrationvDepartPos = spinnerDepart.getSelectedItemPosition();
         int concentrationvArriveePos = spinnerArrivee.getSelectedItemPosition();
-        double concentrationvDepartD = 0;
+        double concentrationvDepartD;
         try {
             concentrationvDepartD = Double.parseDouble(concentrationvDepart);
         } catch (Exception e) {

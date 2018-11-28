@@ -9,7 +9,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_editor_absoluteX="8dp"
+        app:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,12 +23,14 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:textColor="@color/colorRouge"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:autoLink="email|map|all"
                 android:autoText="false"
-                android:text="NB: Se référer aux fiches techniques et à la reglementation en vigueur"
+                android:background="@color/colorRouge"
+                android:text="@string/textAjoutNb"
+                android:textColor="@color/color3Vert"
+                android:textStyle="bold"
                 app:autoSizeTextType="uniform" />
         </LinearLayout>
 
@@ -44,21 +50,28 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Volume à traiter"
-                    app:autoSizeTextType="uniform" />
+                    android:background="@color/colorRouge"
+                    android:text="@string/textVolume"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBeige"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="none" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@color/color3Beige">
 
                 <EditText
                     android:id="@+id/edittext1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:hint="Valeur"
+                    android:background="@color/colorBeige"
+                    android:hint="@string/textAjoutValeur"
                     android:inputType="numberDecimal" />
 
                 <TextView
@@ -66,8 +79,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="hL"
-                    app:autoSizeTextType="uniform" />
+                    android:background="@color/colorBeige"
+                    android:text="@string/textAjoutHl"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    app:autoSizeTextType="none" />
 
 
             </LinearLayout>
@@ -78,6 +94,7 @@
             android:layout_width="match_parent"
             android:layout_height="600dp"
             android:layout_weight="1"
+            android:background="@color/colorBeige"
             android:orientation="vertical">
 
             <LinearLayout
@@ -89,29 +106,37 @@
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Solide"
-                    app:autoSizeTextType="uniform" />
+                    android:layout_height="61dp"
+                    android:background="@color/colorRouge"
+                    android:text="@string/textSolide"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBeige"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="none" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@color/color3Beige">
 
                 <EditText
                     android:id="@+id/edittext2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:hint="Valeur"
+                    android:background="@color/colorBeige"
+                    android:hint="@string/textAjoutValeur"
                     android:inputType="numberDecimal" />
 
                 <Spinner
                     android:id="@+id/spinner1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:background="@color/colorBeige" />
 
 
             </LinearLayout>
@@ -119,20 +144,26 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@color/color3Beige">
 
-                <TextView
-                    android:id="@+id/textview1"
+                <EditText
+                    android:id="@+id/edittext3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:hint="Resultat"/>
+                    android:background="@color/colorBeige"
+                    android:hint="@string/textResultat"
+                    android:inputType="numberDecimal" />
+
 
                 <Spinner
                     android:id="@+id/spinner2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:background="@color/colorBeige"/>
+
             </LinearLayout>
         </LinearLayout>
 
@@ -140,6 +171,7 @@
             android:layout_width="match_parent"
             android:layout_height="600dp"
             android:layout_weight="1"
+            android:background="@color/colorBeige"
             android:orientation="vertical">
 
             <LinearLayout
@@ -151,22 +183,29 @@
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Liquide"
-                    app:autoSizeTextType="uniform" />
+                    android:layout_height="61dp"
+                    android:background="@color/colorRouge"
+                    android:text="@string/textLiquide"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBeige"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="none" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@color/color3Beige">
 
 
                 <EditText
-                    android:id="@+id/edittext3"
+                    android:id="@+id/edittext4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@color/colorBeige"
                     android:hint="Valeur"
                     android:inputType="numberDecimal" />
 
@@ -174,28 +213,32 @@
                     android:id="@+id/spinner3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:background="@color/colorBeige" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@color/color3Beige">
 
-                <TextView
-                    android:id="@+id/textview2"
+                <EditText
+                    android:id="@+id/edittext5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:hint="Resultat"
+                    android:background="@color/colorBeige"
+                    android:hint="@string/textResultat"
                     android:inputType="numberDecimal" />
 
                 <Spinner
                     android:id="@+id/spinner4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:background="@color/colorBeige"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

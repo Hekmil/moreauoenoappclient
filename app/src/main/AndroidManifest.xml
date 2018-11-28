@@ -23,7 +23,8 @@
         </activity>
         <activity android:name=".Ajout" />
         <activity android:name=".Conversion" />
-        <activity android:name=".Sulfitage"></activity>
+        <activity android:name=".Sulfitage" />
+        <activity android:name=".SignInActivity"></activity>
     </application>
 
 </manifest>

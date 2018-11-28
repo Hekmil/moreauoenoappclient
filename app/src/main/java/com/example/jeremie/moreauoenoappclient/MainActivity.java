@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+            = new BottomNavigationView.OnNavigationItemSelectedListener()
+    {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
 
@@ -34,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        public boolean onNavigationItemSelected(@NonNull MenuItem item)
+        {
             switch (item.getItemId()) {
                 case R.id.navigation_faq:
                     FAQ faq = new FAQ();

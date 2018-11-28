@@ -8,6 +8,8 @@
     <string name="fragment_calcul_title">Ceci est le fragment Calcul</string>
     <string name="fragment_chat_title">Ceci est le fragment Chat</string>
 
+    <string name="sign_in">Se connecter</string>
+
     <string-array name="masses_array">
         <item>Milligrammes</item>
         <item>Grammes</item>
@@ -95,5 +97,6 @@
         <item>Hecolitres</item>
         <item>Pieces</item>
     </string-array>
+
 
 </resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "155925637236",
+    "firebase_url": "https://moreau-oenologie.firebaseio.com",
+    "project_id": "moreau-oenologie",
+    "storage_bucket": "moreau-oenologie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155925637236:android:5e72b6ab9c10e266",
+        "android_client_info": {
+          "package_name": "com.example.jeremie.moreauoenoappclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155925637236-8hh6ua3df9acolq1mkfnsssr317mempl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvQg9kkJp9ARRiu7XyLxsElDW2laKNPM4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

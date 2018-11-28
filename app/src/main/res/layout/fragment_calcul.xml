@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorVert"
+    android:background="@color/color2Rouge"
     tools:context=".FAQ">
 
     <!-- TODO: Update blank fragment layout -->
@@ -15,53 +15,94 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:background="@drawable/champ">
 
-                <Button
-                    android:id="@+id/button3"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_marginBottom="2.5dp"
                     android:layout_weight="1"
-                    android:text="ajout"
-                    android:onClick="pageajout"/>
-            </LinearLayout>
+                    android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/button10"
+                        style="@android:style/Widget.Button.Toggle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:alpha="0.75"
+                        android:onClick="pagesulfitage"
+                        android:text="Sulfitage"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorRouge"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
-                <Button
-                    android:id="@+id/button4"
-
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_marginBottom="2.5dp"
                     android:layout_weight="1"
-                    android:text="conversion"
-                    android:onClick="pageaconversion"/>
-            </LinearLayout>
+                    android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/button4"
+                        style="@android:style/Widget.Button.Toggle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:layout_marginRight="2.5dp"
+                        android:layout_marginBottom="2.5dp"
+                        android:layout_weight="1"
+                        android:alpha="0.75"
+                        android:onClick="pageaconversion"
+                        android:text="Conversion"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorRouge"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
-                <Button
-                    android:id="@+id/button10"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_marginBottom="5dp"
                     android:layout_weight="1"
-                    android:text="sulfitage"
-                    android:onClick="pagesulfitage"/>
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button3"
+                        style="@android:style/Widget.Button.Toggle"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:layout_marginRight="2.5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:alpha="0.75"
+                        android:onClick="pageajout"
+                        android:text="Ajout"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorRouge"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content" />
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>

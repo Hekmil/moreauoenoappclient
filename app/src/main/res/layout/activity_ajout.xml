@@ -12,8 +12,8 @@
         android:orientation="vertical"
         app:layout_editor_absoluteX="8dp"
         app:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="56dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -147,8 +147,8 @@
                 android:layout_weight="1"
                 android:background="@color/color3Beige">
 
-                <EditText
-                    android:id="@+id/edittext3"
+                <TextView
+                    android:id="@+id/textResultatSolide"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -162,7 +162,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/colorBeige"/>
+                    android:background="@color/colorBeige" />
 
             </LinearLayout>
         </LinearLayout>
@@ -201,7 +201,7 @@
 
 
                 <EditText
-                    android:id="@+id/edittext4"
+                    android:id="@+id/edittext3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -224,8 +224,8 @@
                 android:layout_weight="1"
                 android:background="@color/color3Beige">
 
-                <EditText
-                    android:id="@+id/edittext5"
+                <TextView
+                    android:id="@+id/textResultatLiquide"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -238,7 +238,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/colorBeige"/>
+                    android:background="@color/colorBeige" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

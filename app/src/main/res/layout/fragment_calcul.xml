@@ -6,9 +6,6 @@
     android:background="@color/color2Rouge"
     tools:context=".FAQ">
 
-    <!-- TODO: Update blank fragment layout -->
-
-
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -27,25 +24,29 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2.5dp"
                     android:layout_marginRight="2.5dp"
-                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginBottom="5dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/button10"
+                        android:id="@+id/button3"
                         style="@android:style/Widget.Button.Toggle"
-                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2.5dp"
+                        android:layout_marginRight="2.5dp"
+                        android:layout_marginBottom="5dp"
                         android:layout_weight="1"
                         android:alpha="0.75"
-                        android:onClick="pagesulfitage"
-                        android:text="Sulfitage"
+                        android:onClick="pageAjout"
+                        android:text="Ajout"
                         android:textAlignment="center"
                         android:textColor="@color/colorRouge"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -69,7 +70,7 @@
                         android:layout_marginBottom="2.5dp"
                         android:layout_weight="1"
                         android:alpha="0.75"
-                        android:onClick="pageaconversion"
+                        android:onClick="pageConversion"
                         android:text="Conversion"
                         android:textAlignment="center"
                         android:textColor="@color/colorRouge"
@@ -79,32 +80,27 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="2.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginRight="2.5dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="2.5dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/button3"
+                        android:id="@+id/button10"
                         style="@android:style/Widget.Button.Toggle"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="2.5dp"
-                        android:layout_marginRight="2.5dp"
-                        android:layout_marginBottom="5dp"
                         android:layout_weight="1"
                         android:alpha="0.75"
-                        android:onClick="pageajout"
-                        android:text="Ajout"
+                        android:onClick="pageSulfitage"
+                        android:text="Sulfitage"
                         android:textAlignment="center"
                         android:textColor="@color/colorRouge"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content" />
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
     </android.support.constraint.ConstraintLayout>
 </FrameLayout>

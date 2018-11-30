@@ -6,18 +6,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class Calcul extends Fragment {
+public class Resultat extends Fragment {
 
-    public Calcul() {
+    public Resultat() {
 
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_calcul, container, false);
+    @Override public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_chat, container, false);
 
         //Instancier vos composants graphique ici (faîtes vos findViewById)
-        return view;
-    }
+        return view; }
 
 }

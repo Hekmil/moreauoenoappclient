@@ -12,10 +12,12 @@ public class Chat extends Fragment {
 
     }
 
-    @Override public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_chat, container, false);
 
         //Instancier vos composants graphique ici (faîtes vos findViewById)
-        return view; }
+        return view;
+    }
 
 }

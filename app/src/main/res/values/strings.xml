@@ -8,7 +8,7 @@
     <string name="fragment_faq_title">Ceci est le fragment FAQ</string>
     <string name="fragment_calcul_title">Ceci est le fragment Calcul</string>
     <string name="fragment_chat_title">Ceci est le fragment Chat</string>
-
+    <string name="fragment_resultat_title">Ceci est le fragment Chat</string>
 
     <!-- Calcul -->
 
@@ -20,11 +20,16 @@
     <string name="textLiquide">Liquide</string>
     <string name="textMasse">Masse</string>
     <string name="textResultat">Résultat</string>
-    <string name="textConvValeur1">Valeur 1</string>
-    <string name="textConvValeur2">Valeur 2</string>
+    <string name="textValeur1">Valeur 1</string>
+    <string name="textValeur2">Valeur 2</string>
     <string name="textVolume">Volume</string>
     <string name="textConvCm">Concentrations massiques</string>
     <string name="textConvCv">Concentrations volumiques</string>
+    <string name="textSulfVolumeCuve">Volume cuve</string>
+    <string name="textSulfSo2Ini">SO2 Libre Initial</string>
+    <string name="textSulfSo2Final">SO2 Final Souhaité</string>
+    <string name="textSulfConcentration">Concentration</string>
+    <string name="textSulfQuantite">QUANTITE</string>
 
     <string-array name="arrayMasses">
         <item>mg</item>
@@ -113,9 +118,11 @@
         <item>10%</item>
     </string-array>
 
+    <string-array name="arrayTauxContrationSulfitage">
+        <item>0.1</item>
+        <item>0.05</item>
+    </string-array>
 
     <!--        -->
-
-
 
 </resources>

@@ -1,7 +1,7 @@
 package com.example.jeremie.moreauoenoappclient;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -61,21 +61,26 @@ public class Conversion extends AppCompatActivity {
 
 
         // initialisation des spinner
-        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.masses_array, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.arrayMasses, android.R.layout.simple_spinner_item);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.volumes_array, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.arrayVolumes, android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this, R.array.concentrationsm_array, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this, R.array.arrayCm1, android.R.layout.simple_spinner_item);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this, R.array.concentrationsv_array, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this, R.array.arrayCv1, android.R.layout.simple_spinner_item);
         adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
 
         spinner1.setAdapter(adapter1);
         spinner2.setAdapter(adapter1);
+        spinner3.setAdapter(adapter2);
+        spinner4.setAdapter(adapter2);
+        spinner5.setAdapter(adapter3);
+        spinner6.setAdapter(adapter3);
+        spinner7.setAdapter(adapter4);
+        spinner8.setAdapter(adapter4);
 
         spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -89,7 +94,6 @@ public class Conversion extends AppCompatActivity {
             }
         });
 
-
         spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -101,7 +105,6 @@ public class Conversion extends AppCompatActivity {
 
             }
         });
-
 
         //initialisation des editText
         editText1.addTextChangedListener(new TextWatcher() {
@@ -119,7 +122,6 @@ public class Conversion extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 updateConversionmasses(s.toString(), editText2, spinner1, spinner2);
             }
-
         });
 
         editText2.addTextChangedListener(new TextWatcher() {
@@ -140,10 +142,6 @@ public class Conversion extends AppCompatActivity {
 
             }
         });
-
-
-        spinner3.setAdapter(adapter2);
-        spinner4.setAdapter(adapter2);
 
         spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -207,10 +205,6 @@ public class Conversion extends AppCompatActivity {
             }
         });
 
-
-        spinner5.setAdapter(adapter3);
-        spinner6.setAdapter(adapter3);
-
         spinner5.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -273,10 +267,6 @@ public class Conversion extends AppCompatActivity {
             }
         });
 
-
-        spinner7.setAdapter(adapter4);
-        spinner8.setAdapter(adapter4);
-
         spinner7.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -317,7 +307,6 @@ public class Conversion extends AppCompatActivity {
 
                 updateConversionconcentrationv(s.toString(), editText8, spinner7, spinner8);
             }
-
         });
 
         editText8.addTextChangedListener(new TextWatcher() {
@@ -336,10 +325,7 @@ public class Conversion extends AppCompatActivity {
                 updateConversionconcentrationv(s.toString(), editText7, spinner8, spinner7);
             }
         });
-
-
     }
-
 
     public void updateConversionmasses(String masseDepart, EditText editTextArrivee, Spinner spinnerDepart, Spinner spinnerArrivee) {
         if (updateEditText1)
@@ -420,7 +406,7 @@ public class Conversion extends AppCompatActivity {
 
 
     public double conversionmasses(int masseDepartPos, int masseArriveePos, double masseDepart) {
-        String[] tauxArray1 = getResources().getStringArray(R.array.masses_taux_array);
+        String[] tauxArray1 = getResources().getStringArray(R.array.arrayTauxMasses);
         double taux1 = Double.parseDouble(tauxArray1[masseDepartPos]);
         double taux2 = Double.parseDouble(tauxArray1[masseArriveePos]);
         double valeurGramme = masseDepart * taux1;
@@ -430,7 +416,7 @@ public class Conversion extends AppCompatActivity {
 
 
     public double conversionvolumes(int volumeDepartPos, int volumeArriveePos, double volumeDepart) {
-        String[] tauxArray2 = getResources().getStringArray(R.array.volumes_taux_array);
+        String[] tauxArray2 = getResources().getStringArray(R.array.arrayTauxVolumes);
         double taux1 = Double.parseDouble(tauxArray2[volumeDepartPos]);
         double taux2 = Double.parseDouble(tauxArray2[volumeArriveePos]);
         double valeurLitre = volumeDepart * taux1;
@@ -439,7 +425,7 @@ public class Conversion extends AppCompatActivity {
     }
 
     public double conversionconcentrationm(int concentrationmDepartPos, int concentrationmArriveePos, double concentrationmDepart) {
-        String[] tauxArray3 = getResources().getStringArray(R.array.concentrationm_taux_array);
+        String[] tauxArray3 = getResources().getStringArray(R.array.arrayTauxCm1);
         double taux1 = Double.parseDouble(tauxArray3[concentrationmDepartPos]);
         double taux2 = Double.parseDouble(tauxArray3[concentrationmArriveePos]);
         double valeurConcentration = concentrationmDepart * taux1;
@@ -449,7 +435,7 @@ public class Conversion extends AppCompatActivity {
 
 
     public double conversionconcentrationv(int concentrationvDepartPos, int concentrationvArriveePos, double concentrationvDepart) {
-        String[] tauxArray4 = getResources().getStringArray(R.array.concentrationv_taux_array);
+        String[] tauxArray4 = getResources().getStringArray(R.array.arrayTauxCv1);
         double taux1 = Double.parseDouble(tauxArray4[concentrationvDepartPos]);
         double taux2 = Double.parseDouble(tauxArray4[concentrationvArriveePos]);
         double valeurConcentration = concentrationvDepart / taux1;

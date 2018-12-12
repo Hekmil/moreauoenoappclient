@@ -1,7 +1,7 @@
 package com.example.jeremie.moreauoenoappclient;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -42,8 +42,8 @@ public class Ajout extends AppCompatActivity {
         spinner3 = findViewById(R.id.spinner3);
         spinner4 = findViewById(R.id.spinner4);
 
-        textView1 = findViewById(R.id.textResultatSolide);
-        textView2 = findViewById(R.id.textResultatSolide);
+        textView1 = findViewById(R.id.textview1);
+        textView2 = findViewById(R.id.textview2);
 
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.arrayCm2, android.R.layout.simple_spinner_item);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -165,7 +165,7 @@ public class Ajout extends AppCompatActivity {
     }
 
     //Récupération des valeurs des champs Solide
-    public void updateSolide(String volume, String solide, TextView viewTextResult, Spinner spinnerDepart, Spinner spinnerArrivee) {
+    public void updateSolide(String volume, String solide,  TextView viewTextResult, Spinner spinnerDepart, Spinner spinnerArrivee) {
         if (updateText)
             return;
         int unitDepart = spinnerDepart.getSelectedItemPosition();
@@ -187,7 +187,7 @@ public class Ajout extends AppCompatActivity {
     }
 
     public double conversionSolide(int unitCm, int unitM, double volumeVal, double solideVal) {
-        String[] arrayCm = getResources().getStringArray(R.array.arrayTauxCm2);
+        String[] arrayCm = getResources().getStringArray(R.array.concentrationCm_taux_array);
         String[] arrayM = getResources().getStringArray(R.array.arrayTauxMasses);
         double tauxCm = Double.parseDouble(arrayCm[unitCm]);
         double tauxM = Double.parseDouble(arrayM[unitM]);
@@ -196,7 +196,7 @@ public class Ajout extends AppCompatActivity {
     }
 
     //Récupération des valeurs des champs Liquide
-    public void updateLiquide(String volume, String liquide, TextView viewTextResult, Spinner spinnerDepart, Spinner spinnerArrivee) {
+    public void updateLiquide(String volume, String liquide,  TextView viewTextResult, Spinner spinnerDepart, Spinner spinnerArrivee) {
         if (updateText)
             return;
         int unitDepart = spinnerDepart.getSelectedItemPosition();
@@ -218,7 +218,7 @@ public class Ajout extends AppCompatActivity {
     }
 
     public double conversionLiquide(int unitCm, int unitM, double volumeVal, double liquideVal) {
-        String[] arrayCm = getResources().getStringArray(R.array.arrayTauxCv2);
+        String[] arrayCm = getResources().getStringArray(R.array.concentrationCv_taux_array);
         String[] arrayM = getResources().getStringArray(R.array.arrayTauxVolumes);
         double tauxCm = Double.parseDouble(arrayCm[unitCm]);
         double tauxM = Double.parseDouble(arrayM[unitM]);

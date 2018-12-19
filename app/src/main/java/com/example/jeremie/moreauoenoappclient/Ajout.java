@@ -187,7 +187,7 @@ public class Ajout extends AppCompatActivity {
     }
 
     public double conversionSolide(int unitCm, int unitM, double volumeVal, double solideVal) {
-        String[] arrayCm = getResources().getStringArray(R.array.arrayTauxCm1);
+        String[] arrayCm = getResources().getStringArray(R.array.arrayTauxCm2);
         String[] arrayM = getResources().getStringArray(R.array.arrayTauxMasses);
         double tauxCm = Double.parseDouble(arrayCm[unitCm]);
         double tauxM = Double.parseDouble(arrayM[unitM]);
@@ -218,7 +218,7 @@ public class Ajout extends AppCompatActivity {
     }
 
     public double conversionLiquide(int unitCm, int unitM, double volumeVal, double liquideVal) {
-        String[] arrayCm = getResources().getStringArray(R.array.arrayTauxCv1);
+        String[] arrayCm = getResources().getStringArray(R.array.arrayTauxCv2);
         String[] arrayM = getResources().getStringArray(R.array.arrayTauxVolumes);
         double tauxCm = Double.parseDouble(arrayCm[unitCm]);
         double tauxM = Double.parseDouble(arrayM[unitM]);

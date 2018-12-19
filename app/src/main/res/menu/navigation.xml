@@ -16,4 +16,9 @@
         android:icon="@drawable/ic_chat"
         android:title="Notifications" />
 
+    <item
+        android:id="@+id/navigation_resultat"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="@string/title_resultat" />
+
 </menu>

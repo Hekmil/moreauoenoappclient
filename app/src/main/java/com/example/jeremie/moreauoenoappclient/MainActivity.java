@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                             .replace(R.id.fragment, chat)
                             .commit();
                     return true;
-                case R.id.navigation_resultat:
+                case R.id.navigation:
                     Resultat resultat = new Resultat();
                     fragmentManager.beginTransaction()
                             .replace(R.id.fragment, resultat)

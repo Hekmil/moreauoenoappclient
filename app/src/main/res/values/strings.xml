@@ -29,7 +29,7 @@
     <string name="textSulfSo2Ini">SO2 Libre Initial</string>
     <string name="textSulfSo2Final">SO2 Final Souhaité</string>
     <string name="textSulfConcentration">Concentration</string>
-    <string name="textSulfQuantite">QUANTITE</string>
+    <string name="textSulfQuantite">Quantité</string>
 
     <string-array name="arrayMasses">
         <item>mg</item>

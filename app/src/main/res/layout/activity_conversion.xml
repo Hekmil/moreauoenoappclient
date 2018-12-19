@@ -31,14 +31,14 @@
                     android:id="@+id/textView7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/colorBeige"
                     android:text="@string/textMasse"
+                    android:background="@color/colorBeige"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
                     android:textColor="@color/color5Beige"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    app:autoSizeTextType="uniform" />
+                    app:autoSizeTextType="uniform"/>
             </LinearLayout>
 
             <LinearLayout
@@ -55,7 +55,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/color3Beige"
-                    android:hint="@string/textConvValeur1"
+                    android:hint="@string/textValeur1"
                     android:inputType="numberDecimal" />
 
                 <Spinner
@@ -81,7 +81,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/color3Beige"
-                    android:hint="@string/textConvValeur2"
+                    android:hint="@string/textValeur2"
                     android:inputType="numberDecimal" />
 
                 <Spinner
@@ -136,7 +136,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:hint="@string/textConvValeur1"
+                    android:hint="@string/textValeur1"
                     android:inputType="numberDecimal" />
 
                 <Spinner
@@ -160,7 +160,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:hint="@string/textConvValeur2"
+                    android:hint="@string/textValeur2"
                     android:inputType="numberDecimal" />
 
                 <Spinner
@@ -227,7 +227,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:hint="@string/textConvValeur1"
+                    android:hint="@string/textValeur1"
                     android:inputType="numberDecimal" />
 
                 <Spinner
@@ -241,7 +241,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:hint="@string/textConvValeur1"
+                    android:hint="@string/textValeur1"
                     android:inputType="numberDecimal" />
 
                 <Spinner
@@ -269,7 +269,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:hint="@string/textConvValeur2"
+                    android:hint="@string/textValeur2"
                     android:inputType="numberDecimal" />
 
                 <Spinner
@@ -284,7 +284,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:hint="@string/textConvValeur2"
+                    android:hint="@string/textValeur2"
                     android:inputType="numberDecimal" />
 
                 <Spinner

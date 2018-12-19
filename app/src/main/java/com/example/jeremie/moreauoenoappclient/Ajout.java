@@ -42,8 +42,8 @@ public class Ajout extends AppCompatActivity {
         spinner3 = findViewById(R.id.spinner3);
         spinner4 = findViewById(R.id.spinner4);
 
-        textView1 = findViewById(R.id.textview1);
-        textView2 = findViewById(R.id.textview2);
+        textView1 = findViewById(R.id.textView1);
+        textView2 = findViewById(R.id.textView2);
 
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.arrayCm2, android.R.layout.simple_spinner_item);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -187,7 +187,7 @@ public class Ajout extends AppCompatActivity {
     }
 
     public double conversionSolide(int unitCm, int unitM, double volumeVal, double solideVal) {
-        String[] arrayCm = getResources().getStringArray(R.array.concentrationCm_taux_array);
+        String[] arrayCm = getResources().getStringArray(R.array.arrayTauxCm1);
         String[] arrayM = getResources().getStringArray(R.array.arrayTauxMasses);
         double tauxCm = Double.parseDouble(arrayCm[unitCm]);
         double tauxM = Double.parseDouble(arrayM[unitM]);
@@ -218,7 +218,7 @@ public class Ajout extends AppCompatActivity {
     }
 
     public double conversionLiquide(int unitCm, int unitM, double volumeVal, double liquideVal) {
-        String[] arrayCm = getResources().getStringArray(R.array.concentrationCv_taux_array);
+        String[] arrayCm = getResources().getStringArray(R.array.arrayTauxCv1);
         String[] arrayM = getResources().getStringArray(R.array.arrayTauxVolumes);
         double tauxCm = Double.parseDouble(arrayCm[unitCm]);
         double tauxM = Double.parseDouble(arrayM[unitM]);

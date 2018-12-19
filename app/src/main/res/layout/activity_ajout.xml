@@ -23,14 +23,15 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textView1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:autoLink="email|map|all"
                 android:autoText="false"
-                android:background="@color/colorRouge"
                 android:text="@string/textAjoutNb"
-                android:textColor="@color/colorBeige"
+                android:background="@color/colorBeige"
+                android:alpha="0.75"
+                android:textColor="@android:color/holo_red_dark"
                 android:textStyle="bold"
                 app:autoSizeTextType="uniform" />
         </LinearLayout>
@@ -39,7 +40,6 @@
             android:layout_width="match_parent"
             android:layout_height="600dp"
             android:layout_weight="1"
-            android:alpha="0.75"
             android:orientation="vertical">
 
             <LinearLayout
@@ -52,19 +52,21 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/colorRouge"
                     android:text="@string/textVolume"
+                    android:background="@color/colorBeige"
                     android:textAlignment="center"
-                    android:textColor="@color/colorBeige"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="@color/color5Beige"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    app:autoSizeTextType="none" />
+                    app:autoSizeTextType="uniform" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:alpha="0.75"
                 android:background="@color/color3Beige">
 
                 <EditText
@@ -94,8 +96,6 @@
             android:layout_width="match_parent"
             android:layout_height="600dp"
             android:layout_weight="1"
-            android:alpha="0.75"
-            android:background="@color/color3Beige"
             android:orientation="vertical">
 
             <LinearLayout
@@ -108,18 +108,21 @@
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="61dp"
-                    android:background="@color/colorRouge"
                     android:text="@string/textSolide"
+                    android:background="@color/colorBeige"
                     android:textAlignment="center"
-                    android:textColor="@color/colorBeige"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="@color/color5Beige"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    app:autoSizeTextType="none" />
+                    app:autoSizeTextType="uniform" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="0.75"
+                android:background="@color/color3Beige"
                 android:layout_weight="1">
 
                 <EditText
@@ -142,6 +145,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="0.75"
+                android:background="@color/color3Beige"
                 android:layout_weight="1">
 
                 <EditText
@@ -166,8 +171,6 @@
             android:layout_width="match_parent"
             android:layout_height="600dp"
             android:layout_weight="1"
-            android:alpha="0.75"
-            android:background="@color/color3Beige"
             android:orientation="vertical">
 
             <LinearLayout
@@ -180,19 +183,21 @@
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="61dp"
-                    android:background="@color/colorRouge"
                     android:text="@string/textLiquide"
+                    android:background="@color/colorBeige"
                     android:textAlignment="center"
-                    android:textColor="@color/colorBeige"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="@color/color5Beige"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    app:autoSizeTextType="none" />
+                    app:autoSizeTextType="uniform"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:alpha="0.75"
                 android:background="@color/color3Beige">
 
 
@@ -216,6 +221,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:alpha="0.75"
                 android:background="@color/color3Beige">
 
                 <EditText

@@ -3,11 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/champs"
-    tools:context=".FAQ">
-
-    <!-- TODO: Update blank fragment layout -->
-
+    android:background="@drawable/champs">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,77 +15,83 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textView16"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:textAlignment="center"
                 android:gravity="center"
+                android:text="@string/elevage"
+                android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textSize="30sp"
-                android:textStyle="bold"
-                android:text="F.A.Q." />
+                android:textStyle="bold" />
 
             <Button
-                android:id="@+id/buttonVinification"
+                android:id="@+id/buttonbretts"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:text="@string/vinification"
-                android:textStyle="bold"
-                android:onClick="qVinification"/>
+                android:text="@string/bretts"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/buttonElevage"
+                android:id="@+id/buttonaciditeVolatile"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="@string/elevage"
-                android:alpha="0.75"
-                android:textStyle="bold"
-                android:onClick="qElevage"/>
+                android:text="@string/aciditeVolatile"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/buttonPreparation"
+                android:id="@+id/buttonmoisi"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:textStyle="bold"
-                android:text="@string/preparationALaMise"
-                android:onClick="qPrepa"/>
+                android:text="@string/moisi"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/buttonBio"
+                android:id="@+id/buttons02Actif"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:textStyle="bold"
-                android:text="@string/vinbio"
-                android:onClick="qBio"/>
+                android:text="@string/s02Actif"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/buttonEffervescent"
+                android:id="@+id/buttondoseS02"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:textStyle="bold"
-                android:text="@string/effervescent"/>
+                android:text="@string/doseS02"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
             <Button
-                android:id="@+id/buttonLiquoreux"
+                android:id="@+id/buttonnoix"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:textStyle="bold"
-                android:text="@string/liquoreux"
-                android:onClick="qLiqoreux"/>
+                android:text="@string/noix"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
+            <Button
+                android:id="@+id/buttonfml"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/fml"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <Button
+                android:id="@+id/buttonhuile"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/huile"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
 
         </LinearLayout>
+
     </android.support.constraint.ConstraintLayout>
+
 </FrameLayout>

@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/champs"
+        android:background="@color/color3Beige"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -27,15 +27,15 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
+                <Button
                     android:id="@+id/textView7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="@string/textMasse"
-                    android:background="@color/colorBeige"
+                    android:background="@drawable/rectangle_rouge"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textColor="@color/color5Beige"
+                    android:textColor="@color/color3Beige"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:autoSizeTextType="uniform"/>
@@ -44,9 +44,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:alpha="0.75"
-                android:background="@color/color3Beige">
+                android:layout_weight="1">
 
 
                 <EditText
@@ -54,7 +52,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/color3Beige"
                     android:hint="@string/textValeur1"
                     android:inputType="numberDecimal" />
 
@@ -70,16 +67,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:alpha="0.75"
-                android:background="@color/color3Beige">
+                android:layout_weight="1">
 
                 <EditText
                     android:id="@+id/edittext2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/color3Beige"
                     android:hint="@string/textValeur2"
                     android:inputType="numberDecimal" />
 
@@ -110,11 +104,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/colorBeige"
+                    android:background="@drawable/rectangle_rouge"
                     android:text="@string/textVolume"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textColor="@color/color5Beige"
+                    android:textColor="@color/color3Beige"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     android:theme="@style/AlertDialog.AppCompat"
@@ -125,8 +119,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:background="@color/color3Beige"
                 android:orientation="horizontal">
 
                 <EditText
@@ -149,8 +141,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:background="@color/color3Beige"
                 android:orientation="horizontal">
 
                 <EditText
@@ -188,11 +178,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/colorBeige"
+                    android:background="@drawable/rectangle_rouge"
                     android:text="@string/textConvCm"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textColor="@color/color5Beige"
+                    android:textColor="@color/color3Beige"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:autoSizeTextType="none" />
@@ -202,11 +192,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/colorBeige"
+                    android:background="@drawable/rectangle_rouge"
                     android:text="@string/textConvCv"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textColor="@color/color5Beige"
+                    android:textColor="@color/color3Beige"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:autoSizeTextType="none" />/>
@@ -216,8 +206,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:background="@color/color3Beige"
                 android:orientation="horizontal">
 
                 <EditText
@@ -258,8 +246,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:background="@color/color3Beige"
                 android:orientation="horizontal">
 
                 <EditText

@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/champs"
-    tools:context=".FAQ">
+    android:background="@drawable/champs">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,51 +15,53 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView18"
+                android:id="@+id/textView16"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textSize="30sp"
                 android:textStyle="bold"
-
-                android:text="Outils" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="pageAjout"
-                android:text="Ajout"
-                android:alpha="0.75"
-                android:textAlignment="center"
-                android:textStyle="bold" />
+                android:text="@string/preparationALaMise" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/buttonproteines"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:onClick="pageConversion"
-                android:text="Conversion"
-                android:textAlignment="center"
-                android:textStyle="bold" />
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:text="@string/proteines" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/buttonmesureOxygene"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:onClick="pageSulfitage"
-                android:text="Sulfitage"
-                android:textAlignment="center"
-                android:textStyle="bold" />
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:text="@string/mesureOxygene" />
+
+            <Button
+                android:id="@+id/buttonilliminerOxygene"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:text="@string/illiminerOxygene" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
         </LinearLayout>
 
     </android.support.constraint.ConstraintLayout>
+
 </FrameLayout>

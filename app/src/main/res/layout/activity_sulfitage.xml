@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/tonneau"
+        android:background="@color/color3Beige"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_editor_absoluteX="8dp"
@@ -30,15 +30,14 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
+                <Button
                     android:id="@+id/textView5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="@string/textSulfVolumeCuve"
-                    android:background="@color/colorBeige"
+                    android:background="@drawable/rectange_vert"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textColor="@color/color5Beige"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:autoSizeTextType="uniform"/>
@@ -47,8 +46,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/color3Beige"
-                android:alpha="0.75"
                 android:layout_weight="1">
 
                 <EditText
@@ -85,10 +82,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="@string/textSulfSo2Ini"
-                    android:background="@color/colorBeige"
+                    android:background="@drawable/rectange_vert"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textColor="@color/color5Beige"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:autoSizeTextType="uniform"/>
@@ -98,8 +94,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:background="@color/color3Beige"
                 android:orientation="vertical">
 
                 <EditText
@@ -129,10 +123,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="@string/textSulfSo2Final"
-                    android:background="@color/colorBeige"
+                    android:background="@drawable/rectange_vert"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textColor="@color/color5Beige"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:autoSizeTextType="uniform"/>
@@ -142,8 +135,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:background="@color/color3Beige"
                 android:orientation="vertical">
 
                 <EditText
@@ -173,10 +164,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="@string/textSulfConcentration"
-                    android:background="@color/colorBeige"
+                    android:background="@drawable/rectange_vert"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textColor="@color/color5Beige"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:autoSizeTextType="uniform"/>
@@ -186,8 +176,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:background="@color/color3Beige"
                 android:orientation="vertical">
 
                 <Spinner
@@ -215,10 +203,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="@string/textSulfQuantite"
-                    android:background="@color/colorBeige"
+                    android:background="@drawable/rectange_vert"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:textColor="@color/color5Beige"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:autoSizeTextType="uniform" />
@@ -228,8 +215,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:alpha="0.75"
-                android:background="@color/color3Beige"
                 android:orientation="vertical">
 
                 <EditText

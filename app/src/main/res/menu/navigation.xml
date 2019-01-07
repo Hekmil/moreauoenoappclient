@@ -9,7 +9,7 @@
     <item
         android:id="@+id/navigation_calcul"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="Dashboard" />
+        android:title="Outils" />
 
     <item
         android:id="@+id/navigation_chat"

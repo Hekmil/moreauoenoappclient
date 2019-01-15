@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "648411127721",
+    "firebase_url": "https://moreau-oenologie-c58a9.firebaseio.com",
+    "project_id": "moreau-oenologie-c58a9",
+    "storage_bucket": "moreau-oenologie-c58a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648411127721:android:e7a166922d782a7f",
+        "android_client_info": {
+          "package_name": "com.moreau_oenologie.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648411127721-hujuhgq69gmj9ta1u76c2up6rgdbaqej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moreau_oenologie.android",
+            "certificate_hash": "cebeeab61cdb6f28fe7a1d06a2d4845a94383e3b"
+          }
+        },
+        {
+          "client_id": "648411127721-clovnvp86p9r5nretjg4hv50pci3vgks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkvoAaPAM6NvNSNP6c6rHGSCwjjPf0l1Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "648411127721-clovnvp86p9r5nretjg4hv50pci3vgks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

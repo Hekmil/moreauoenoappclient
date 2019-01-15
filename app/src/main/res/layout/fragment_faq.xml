@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/champs"
+    tools:context=".FAQ">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="F.A.Q." />
+
+            <Button
+                android:id="@+id/buttonVinification"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:alpha="0.75"
+                android:text="@string/vinification"
+                android:textStyle="bold"
+                android:onClick="qVinification"/>
+
+            <Button
+                android:id="@+id/buttonElevage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/elevage"
+                android:alpha="0.75"
+                android:textStyle="bold"
+                android:onClick="qElevage"/>
+
+            <Button
+                android:id="@+id/buttonPreparation"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:alpha="0.75"
+                android:textStyle="bold"
+                android:text="@string/preparationALaMise"
+                android:onClick="qPrepa"/>
+
+            <Button
+                android:id="@+id/buttonBio"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:alpha="0.75"
+                android:textStyle="bold"
+                android:text="@string/vinbio"
+                android:onClick="qBio"/>
+
+            <Button
+                android:id="@+id/buttonEffervescent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:alpha="0.75"
+                android:textStyle="bold"
+                android:text="@string/effervescent"/>
+
+            <Button
+                android:id="@+id/buttonLiquoreux"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:alpha="0.75"
+                android:textStyle="bold"
+                android:text="@string/liquoreux"
+                android:onClick="qLiqoreux"/>
+
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

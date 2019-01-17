@@ -136,10 +136,10 @@
     <string name="aciditeVolatile">L\'acidité volatile de mon vin augmente, que faire?</string>
     <string name="noix">Mon vin sent la noix, pourquoi et quoi faire?</string>
     <string name="moisi">Mon vin sent le champignon/moisi, que faire?</string>
-    <string name="doseS02">Quel dose de SO2 libre maintenir pendant l\'élevage?</string>
-    <string name="s02Actif">Qu\'est ce que le SO2 actif? et comment le gérer?</string>
+    <string name="doseS02">Quel dose de SO<sub>2</sub> libre maintenir pendant l\'élevage?</string>
+    <string name="s02Actif">Qu\'est ce que le SO<sub>2</sub> actif? et comment le gérer?</string>
 
-    <string name="preparationALaMise">Préparation à la mise</string>
+    <string name="preparationALaMise">Préparation à la mise en bouteille</string>
     <string name="proteines">Mon vin contient des protéines, quel collage est le plus adapté?</string>
     <string name="mesureOxygene">Quel est l\'intéret de mesurer l\'oxygène dissous avant mise en bouteille?</string>
     <string name="illiminerOxygene">Comment illiminer l\'oxygène dissous dans mon vin?</string>
@@ -147,10 +147,10 @@
     <string name="vinbio">Vin bio</string>
     <string name="questionBio">Comment connaître les produits oenologiques autorisés en bio pour le vin?</string>
 
-    <string name="effervescent">Effervescent</string>
+    <string name="effervescent">Vin effervescent</string>
     <string name="questionEffervescent">Mes bouteilles de champagne/crémant gerbent au dégorgement, que faire?</string>
 
-    <string name="liquoreux">Liquoreux</string>
+    <string name="liquoreux">Vin liquoreux</string>
     <string name="questionLiquoreux">Mon vin liquoreux refermente en bouteille, que dois-je faire?</string>
 
     <!--        -->

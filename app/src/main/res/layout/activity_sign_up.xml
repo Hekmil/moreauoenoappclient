@@ -5,22 +5,6 @@
 	android:orientation="vertical"
 	android:weightSum="4">
 
-	<LinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="0dp"
-		android:layout_weight="3"
-		android:gravity="center_horizontal"
-		android:orientation="vertical">
-
-		<TextView
-			android:id="@+id/titleText"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="email, password" />
-
-	</LinearLayout>
-
-
 	<RelativeLayout
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
@@ -28,7 +12,7 @@
 		android:gravity="center_vertical">
 
 		<LinearLayout
-			android:id="@+id/logiInForm"
+			android:id="@+id/signUpEmailPasswordLayout"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:orientation="horizontal"
@@ -36,24 +20,24 @@
 			android:paddingRight="16dp">
 
 			<EditText
-				android:id="@+id/logInFieldEmail"
+				android:id="@+id/signUpFieldEmail"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
-				android:hint="@string/logInEmail"
+				android:hint="@string/signUpEmail"
 				android:inputType="textEmailAddress" />
 
 			<EditText
-				android:id="@+id/logInFieldPassword"
+				android:id="@+id/signUpfieldPassword"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
-				android:hint="@string/logInPassword"
+				android:hint="@string/signUpPassword"
 				android:inputType="textPassword" />
 		</LinearLayout>
 
 		<LinearLayout
-			android:id="@+id/emailPasswordButtons"
+			android:id="@+id/signUpButtons"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_below="@+id/emailPasswordFields"
@@ -62,19 +46,11 @@
 			android:paddingRight="16dp">
 
 			<Button
-				android:id="@+id/logInButton"
+				android:id="@+id/signUpButton"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
-				android:text="@string/loginButton"/>
-
-			<Button
-				android:id="@+id/logInCreateAccountButton"
-				android:layout_width="0dp"
-				android:layout_height="wrap_content"
-				android:layout_weight="1"
-				android:text="@string/create" />
+				android:text="@string/signUp" />
 		</LinearLayout>
-	</RelativeLayout>
-
+	</RelativeL ayout>
 </LinearLayout>

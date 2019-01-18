@@ -80,7 +80,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 		}
 		return valid;
 	}
-	public void onClick(View v) {
+			public void onClick(View v) {
 		int viewId = v.getId();
 		if (viewId == R.id.signUpButton) {
 			createAccount(signUpEmailField.getText().toString(), signUpPasswordField.getText().toString());

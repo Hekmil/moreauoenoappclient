@@ -160,6 +160,8 @@
 	<string name="verifiedEmail">Email de vérification envoyé à</string>
 	<string name="errorVerrifiedEmail">impossible d\'envoyer l\'email de vérification</string>
 	<string name="errorSignUp">Impossible de créer le nouveau compte</string>
+	<string name="firstName">Prénom</string>
+	<string name="lastName">nom</string>
 	<!-- log in and sign up-->
 	<string name="required">requis</string>
 	<string name="loading">Chargement</string>

@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -17,20 +19,40 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class SignUp extends AppCompatActivity implements View.OnClickListener {
 	private FirebaseAuth mAuth;
+	private FirebaseDatabase mDatabase;
 	private EditText signUpEmailField;
 	private EditText signUpPasswordField;
+	private EditText signUpFirstNameField;
+	private EditText signUpLastNameField;
+	private CheckBox signUpIsOenoCheckBox;
+	private EditText signUpPasswordOenoField;
 	public ProgressDialog mProgressDialog;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sign_up);
 		signUpEmailField = (EditText)findViewById(R.id.signUpFieldEmail);
-		signUpPasswordField = (EditText)findViewById(R.id.signUpfieldPassword);
-		Intent loginIntent = getIntent();
+		signUpPasswordField = (EditText) findViewById(R.id.signUpFieldPassword);
+		signUpFirstNameField = (EditText)findViewById(R.id.signUpFieldFirstName);
+		signUpLastNameField = (EditText)findViewById(R.id.signUpFieldLastName);
+		signUpIsOenoCheckBox = (CheckBox) findViewById(R.id.signUpCheckBoxIsOeno);
+		signUpPasswordOenoField = (EditText)findViewById(R.id.signUpFieldPasswordOeno);
+		signUpIsOenoCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+				if (isChecked) {
+					signUpPasswordOenoField.setVisibility(View.VISIBLE);
+				} else {
+					signUpPasswordOenoField.setVisibility(View.GONE);
+				}
+			}
+		});
 		mAuth = FirebaseAuth.getInstance();
+		mDatabase = FirebaseDatabase.getInstance();
 	}
 	private void createAccount(String email, String password) {
 		if (!validateForm(email, password)) {
@@ -78,6 +100,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 		} else {
 			signUpPasswordField.setError(null);
 		}
+		if
 		return valid;
 	}
 			public void onClick(View v) {

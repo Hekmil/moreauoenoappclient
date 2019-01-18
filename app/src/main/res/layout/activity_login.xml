@@ -3,7 +3,6 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical"
-	android:background="@drawable/champs"
 	android:weightSum="4">
 
 	<LinearLayout
@@ -18,18 +17,6 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="email, password" />
-		<TextView
-			android:id="@+id/status"
-			android:text="signed out"
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content" />
-
-		<TextView
-			android:id="@+id/detail"
-			android:text="Firebase User ID: 123456789abc"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			/>
 
 	</LinearLayout>
 
@@ -41,7 +28,7 @@
 		android:gravity="center_vertical">
 
 		<LinearLayout
-			android:id="@+id/emailPasswordFields"
+			android:id="@+id/logiInForm"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:orientation="horizontal"
@@ -49,19 +36,19 @@
 			android:paddingRight="16dp">
 
 			<EditText
-				android:id="@+id/fieldEmail"
+				android:id="@+id/logInFieldEmail"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
-				android:hint="adresse e-mail"
+				android:hint="@string/logInEmail"
 				android:inputType="textEmailAddress" />
 
 			<EditText
-				android:id="@+id/fieldPassword"
+				android:id="@+id/logInFieldPassword"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
-				android:hint="mot de passe"
+				android:hint="@string/logInPassword"
 				android:inputType="textPassword" />
 		</LinearLayout>
 
@@ -75,45 +62,19 @@
 			android:paddingRight="16dp">
 
 			<Button
-				android:id="@+id/emailSignInButton"
+				android:id="@+id/logInButton"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
-				android:text="Se connecter"/>
+				android:text=   "@string/loginButton"/>
 
 			<Button
-				android:id="@+id/emailCreateAccountButton"
+				android:id="@+id/logInCreateAccountButton"
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
-				android:text="Créer un compte" />
+				android:text="@string/create" />
 		</LinearLayout>
-
-		<LinearLayout
-			android:id="@+id/signedInButtons"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_centerInParent="true"
-			android:orientation="horizontal"
-			android:paddingLeft="16dp"
-			android:paddingRight="16dp"
-			android:visibility="gone"
-			android:weightSum="2.0">
-
-			<Button
-				android:id="@+id/signOutButton"
-				android:layout_width="0dp"
-				android:layout_height="wrap_content"
-				android:layout_weight="1.0"
-				android:text="sign out" />
-			<Button
-				android:id="@+id/verifyEmailButton"
-				android:layout_width="0dp"
-				android:layout_height="wrap_content"
-				android:layout_weight="1.0"
-				android:text="verify email" />
-		</LinearLayout>
-
 	</RelativeLayout>
 
 </LinearLayout>

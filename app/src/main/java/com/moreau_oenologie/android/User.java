@@ -26,7 +26,6 @@ public class User {
 	public void writeNewUser(String UID) {
 		DatabaseReference database = FirebaseDatabase.getInstance().getReference();
 		database.child("/Users/" + UID).setValue(this);
-			}
-
+	}
 
 }

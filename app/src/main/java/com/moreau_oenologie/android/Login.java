@@ -17,6 +17,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import android.text.TextUtils;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
@@ -24,6 +30,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 	private EditText logInPasswordField;
 	private FirebaseAuth mAuth;
 	public ProgressDialog mProgressDialog;
+	private User user;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -31,7 +38,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 		setContentView(R.layout.activity_login);
 		logInEmailField = (EditText) findViewById(R.id.logInFieldEmail);
 		logInPasswordField = (EditText) findViewById(R.id.logInFieldPassword);
-		findViewById(R.id.logInCreateAccountButton).setOnClickListener(this);
+			findViewById(R.id.logInCreateAccountButton).setOnClickListener(this);
 		findViewById(R.id.logInButton).setOnClickListener(this);
 		mAuth = FirebaseAuth.getInstance();
 	}
@@ -98,8 +105,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 			@Override
 			public void onComplete(@NonNull Task<AuthResult> task) {
 				if (task.isSuccessful()) {
-					// Sign in success, update UI with the signed-in user's information
-					Toast.makeText(Login.this, "login successful", Toast.LENGTH_SHORT).show();
+					String UID = mAuth.getCurrentUser().getUid();
+					getUserFromDb(UID);
 				} else {
 					// If sign in fails, display a message to the user.
 					Toast.makeText(Login.this, "Authentication failed.",
@@ -110,6 +117,22 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 			}
 		});
 		// [END sign_in_with_email]
+	}
+	private void getUserFromDb(String UID) {
+		DatabaseReference database = FirebaseDatabase.getInstance().getReference().child("/Users/" + UID);
+		ValueEventListener userListener = new ValueEventListener() {
+			@Override
+			public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+				user = dataSnapshot.getValue(User.class);
+				Toast.makeText(Login.this, user.firstName + " " + user.lastName, Toast.LENGTH_SHORT).show();
+			}
+
+			@Override
+			public void onCancelled(@NonNull DatabaseError databaseError) {
+				Toast.makeText(Login.this, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
+			}
+		};
+		database.addListenerForSingleValueEvent(userListener);
 	}
 
 

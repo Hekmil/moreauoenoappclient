@@ -1,70 +1,92 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/main_layout"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical"
-	android:weightSum="4"><![CDATA[
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:layout_weight="1"
-		android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-	]]>
+            <TextView
+                android:id="@+id/signUpInscription"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:hint="@string/signUpInscription" />
 
-	<LinearLayout
-		android:id="@+id/signUpButtons"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_below="@+id/emailPasswordFields"
-		android:orientation="horizontal"
-		android:paddingLeft="16dp"
-		android:paddingRight="16dp">
+            <EditText
+                android:id="@+id/signUpFieldFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/firstName"
+                android:inputType="textPersonName" />
 
-		<Button
-			android:id="@+id/signUpButton"
-			android:layout_width="0dp"
-			android:layout_height="70dp"
-			android:layout_below="@+id/signUpButtons"
-			android:layout_weight="1"
-			android:text="@string/signUp" />
-	</LinearLayout>
+            <EditText
+                android:id="@+id/signUpFieldLastName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/lastName"
+                android:inputType="textPersonName" />
 
-	<LinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:orientation="vertical">
 
-		<EditText
-			android:id="@+id/signUpfieldPassword"
-			android:layout_width="0dp"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:hint="@string/signUpPassword"
-			android:inputType="textPassword" />
+            <EditText
+                android:id="@+id/signUpFieldEmail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/signUpEmail"
+                android:inputType="textEmailAddress" />
 
-		<EditText
-			android:id="@+id/signUpFieldEmail"
-			android:layout_width="0dp"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:hint="@string/signUpEmail"
-			android:inputType="textEmailAddress" />
+            <EditText
+                android:id="@+id/signUpFieldPassword"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/signUpPassword"
+                android:inputType="textPassword" />
 
-		<EditText
-			android:id="@+id/signUpFieldLastName"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:hint="@string/lastName"
-			android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/signUpFieldDomain"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/signUpDomain"
+                android:inputType="text" />
 
-		<EditText
-			android:id="@+id/signUpFieldFirstName"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:hint="@string/firstName"
-			android:inputType="textPersonName" />
-	</LinearLayout>
 
-</LinearLayout>
+            <CheckBox
+                android:id="@+id/signUpCheckBoxIsOeno"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/signUpMembre" />
+            <EditText
+                android:id="@+id/signUpFieldPasswordOeno"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:hint="@string/signUpPasswordOeno"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/signUp" />
+        </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+

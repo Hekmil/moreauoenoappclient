@@ -6,8 +6,6 @@
     android:background="@drawable/champs"
     tools:context=".FAQ">
 
-    <!-- TODO: Update blank fragment layout -->
-
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -37,8 +35,7 @@
                 android:layout_weight="1"
                 android:alpha="0.75"
                 android:text="@string/vinification"
-                android:textStyle="bold"
-                android:onClick="qVinification"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonElevage"
@@ -47,8 +44,7 @@
                 android:layout_weight="1"
                 android:text="@string/elevage"
                 android:alpha="0.75"
-                android:textStyle="bold"
-                android:onClick="qElevage"/>
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/buttonPreparation"
@@ -57,8 +53,7 @@
                 android:layout_weight="1"
                 android:alpha="0.75"
                 android:textStyle="bold"
-                android:text="@string/preparationALaMise"
-                android:onClick="qPrepa"/>
+                android:text="@string/preparationALaMise"/>
 
             <Button
                 android:id="@+id/buttonBio"
@@ -67,8 +62,7 @@
                 android:layout_weight="1"
                 android:alpha="0.75"
                 android:textStyle="bold"
-                android:text="@string/vinbio"
-                android:onClick="qBio"/>
+                android:text="@string/vinbio"/>
 
             <Button
                 android:id="@+id/buttonEffervescent"
@@ -86,8 +80,7 @@
                 android:layout_weight="1"
                 android:alpha="0.75"
                 android:textStyle="bold"
-                android:text="@string/liquoreux"
-                android:onClick="qLiqoreux"/>
+                android:text="@string/liquoreux"/>
 
 
         </LinearLayout>

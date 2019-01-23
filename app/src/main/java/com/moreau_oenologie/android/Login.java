@@ -107,6 +107,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 				if (task.isSuccessful()) {
 					String UID = mAuth.getCurrentUser().getUid();
 					getUserFromDb(UID);
+					Intent messageActivityIntent = new Intent(Login.this, MessageActivity.class);
+					messageActivityIntent.putExtra("user", user);
+					startActivity(messageActivityIntent);
 				} else {
 					// If sign in fails, display a message to the user.
 					Toast.makeText(Login.this, "Authentication failed.",
@@ -124,7 +127,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 			@Override
 			public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 				user = dataSnapshot.getValue(User.class);
-				Toast.makeText(Login.this, user.firstName + " " + user.lastName, Toast.LENGTH_SHORT).show();
 			}
 
 			@Override

@@ -73,6 +73,9 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 					sendEmailVerification();
 					String UID = mAuth.getCurrentUser().getUid();
 					user.writeNewUser(UID);
+					Intent messageActivityIntent = new Intent(SignUp.this, MessageActivity.class);
+					messageActivityIntent.putExtra("user", user);
+					startActivity(messageActivityIntent);
 				} else {
 					Toast.makeText(SignUp.this, getString(R.string.errorSignUp), Toast.LENGTH_SHORT).show();
 				}

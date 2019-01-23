@@ -3,13 +3,13 @@
 
     <item
         android:id="@+id/navigation_faq"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/ic_help_outline_black_24dp"
         android:title="FAQ"
     />
 
     <item
         android:id="@+id/navigation_calcul"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/ic_pen"
         android:title="Outils"
         android:color="@color/colorBlanc"/>
 

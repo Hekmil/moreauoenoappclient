@@ -27,15 +27,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, Login.class));
     }
 
-    public void qVinification(View view){
-        startActivity(new Intent(this, Sulfitage.class));
-    }
-    public void qElevage(View view){}
-    public void qPrepa(View view){}
-    public void qBio(View view){}
-    public void qEffervescent(View view){}
-    public void qLiqoreux(View view){}
-
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 

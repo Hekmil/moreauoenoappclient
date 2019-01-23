@@ -24,7 +24,8 @@
 		<activity android:name=".Conversion" />
 		<activity android:name=".Sulfitage" />
 		<activity android:name=".Login" />
-		<activity android:name=".SignUp"></activity>
+		<activity android:name=".SignUp" />
+		<activity android:name=".MessageActivity"></activity>
 	</application>
 
 </manifest>

@@ -19,68 +19,76 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
+                android:text="F.A.Q."
+                android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:text="F.A.Q." />
+                android:textColor="@color/colorRouge"
+                android:textSize="70sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonVinification"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:alpha="0.75"
                 android:text="@string/vinification"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonElevage"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/elevage"
                 android:alpha="0.75"
-                android:textStyle="bold"/>
+                android:text="@string/elevage"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonPreparation"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:alpha="0.75"
-                android:textStyle="bold"
-                android:text="@string/preparationALaMise"/>
+                android:text="@string/preparationALaMise"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonBio"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:alpha="0.75"
-                android:textStyle="bold"
-                android:text="@string/vinbio"/>
+                android:text="@string/vinbio"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonEffervescent"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:alpha="0.75"
-                android:textStyle="bold"
-                android:text="@string/effervescent"/>
+                android:text="@string/effervescent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonLiquoreux"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:alpha="0.75"
-                android:textStyle="bold"
-                android:text="@string/liquoreux"/>
+                android:text="@string/liquoreux"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>

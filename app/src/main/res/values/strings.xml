@@ -10,27 +10,6 @@
     <string name="fragment_chat_title">Ceci est le fragment Chat</string>
     <string name="fragment_resultat_title">Ceci est le fragment Résultat</string>
 
-    <!-- Calcul -->
-
-    <string name="textAjoutNb">NB: Se référer aux fiches techniques et à la reglementation en vigueur</string>
-    <string name="textAjoutVolumetraiter">Volume à traiter</string>
-    <string name="textAjoutValeur">Valeur</string>
-    <string name="textAjoutHl">hL</string>
-    <string name="textSolide">Solide</string>
-    <string name="textLiquide">Liquide</string>
-    <string name="textMasse">Masse</string>
-    <string name="textResultat">Résultat</string>
-    <string name="textValeur1">Valeur 1</string>
-    <string name="textValeur2">Valeur 2</string>
-    <string name="textVolume">Volume</string>
-    <string name="textConvCm">Concentrations massiques</string>
-    <string name="textConvCv">Concentrations volumiques</string>
-    <string name="textSulfVolumeCuve">Volume cuve</string>
-    <string name="textSulfSo2Ini">SO<sub>2</sub> Libre Initial</string>
-    <string name="textSulfSo2Final">SO<sub>2</sub> Final Souhaité</string>
-    <string name="textSulfConcentration">Concentration</string>
-    <string name="textSulfQuantite">Quantité</string>
-
     <string-array name="arrayMasses">
         <item>mg</item>
         <item>g</item>
@@ -124,12 +103,12 @@
     </string-array>
 
     <!--  FAQ  -->
-    <string name="vinification">Vinification</string>
+    <string name="vinification">VINIFICATON</string>
     <string name="sucres">Mes sucres ralentissent, que faire?</string>
     <string name="fermentationAlcoolique">Ma fermentation alcoolique s\'est arrêtée, quels sont les risques et que dois-je faire?</string>
     <string name="debutFermentation">En début de fermentatation, mon vin sent l\'acétate, l\'acétone, le vernis à ongle, que faire?</string>
 
-    <string name="elevage">Elevage</string>
+    <string name="elevage">ELEVAGE</string>
     <string name="bretts">Mon vin est contaminé par des Bretts, que faire?</string>
     <string name="huile">Mon vin est huileux, que faire?</string>
     <string name="fml">La FML ne démarre pas, que faire?</string>
@@ -139,19 +118,48 @@
     <string name="doseS02">Quel dose de SO<sub>2</sub> libre maintenir pendant l\'élevage?</string>
     <string name="s02Actif">Qu\'est ce que le SO<sub>2</sub> actif? et comment le gérer?</string>
 
-    <string name="preparationALaMise">Préparation à la mise en bouteille</string>
+    <string name="preparationALaMise">MISE EN BOUTEILLE</string>
     <string name="proteines">Mon vin contient des protéines, quel collage est le plus adapté?</string>
     <string name="mesureOxygene">Quel est l\'intéret de mesurer l\'oxygène dissous avant mise en bouteille?</string>
     <string name="illiminerOxygene">Comment illiminer l\'oxygène dissous dans mon vin?</string>
 
-    <string name="vinbio">Vin bio</string>
+    <string name="vinbio">VIN BIO</string>
     <string name="questionBio">Comment connaître les produits oenologiques autorisés en bio pour le vin?</string>
 
-    <string name="effervescent">Vin effervescent</string>
+    <string name="effervescent">VIN EFFERVESCENT</string>
     <string name="questionEffervescent">Mes bouteilles de champagne/crémant gerbent au dégorgement, que faire?</string>
 
-    <string name="liquoreux">Vin liquoreux</string>
+    <string name="liquoreux">VIN LIQUOREUX</string>
     <string name="questionLiquoreux">Mon vin liquoreux refermente en bouteille, que dois-je faire?</string>
+
+
+    <!-- Calcul -->
+
+    <string name="textAjoutNb">NB: Se référer aux fiches techniques et à la reglementation en vigueur</string>
+    <string name="textAjoutVolumetraiter">Volume à traiter</string>
+    <string name="textAjoutValeur">Valeur</string>
+    <string name="textAjoutHl">hL</string>
+    <string name="textSolide">Solide</string>
+    <string name="textLiquide">Liquide</string>
+    <string name="textMasse">Masse</string>
+    <string name="textResultat">Résultat</string>
+    <string name="textValeur1">Valeur 1</string>
+    <string name="textValeur2">Valeur 2</string>
+    <string name="textVolume">Volume</string>
+    <string name="textConvCm">Concentrations massiques</string>
+    <string name="textConvCv">Concentrations volumiques</string>
+    <string name="textSulfVolumeCuve">Volume cuve</string>
+    <string name="textSulfSo2Ini">SO<sub>2</sub> Libre Initial</string>
+    <string name="textSulfSo2Final">SO<sub>2</sub> Final Souhaité</string>
+    <string name="textSulfConcentration">Concentration</string>
+    <string name="textSulfQuantite">Quantité</string>
+    <string name="textCalcul">OUTILS</string>
+    <string name="textCalcul1">Outils</string>
+    <string name="textAjout">Ajout</string>
+    <string name="textConversion">Conversion</string>
+    <string name="textSulfitage">Sulftitage</string>
+
+    <string name="textChat">Lancer le chat</string>
 
     <!-- sign up -->
     <string name="signUpEmail">nouvelle adresse email</string>

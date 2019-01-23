@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, Login.class));
     }
 
+    public static boolean triche = false;
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -36,24 +38,29 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_faq:
+                    triche = true;
                     FAQ faq = new FAQ();
                     fragmentManager.beginTransaction()
                             .replace(R.id.fragment, faq)
                             .commit();
                     return true;
                 case R.id.navigation_calcul:
+                    triche = false;
                     Calcul calcul = new Calcul();
                     fragmentManager.beginTransaction()
                             .replace(R.id.fragment, calcul)
                             .commit();
+
                     return true;
                 case R.id.navigation_chat:
+                    triche = false;
                     Chat chat = new Chat();
                     fragmentManager.beginTransaction()
                             .replace(R.id.fragment, chat)
                             .commit();
                     return true;
                 case R.id.navigation_resultat:
+                    triche = false;
                     Resultat resultat = new Resultat();
                     fragmentManager.beginTransaction()
                             .replace(R.id.fragment, resultat)

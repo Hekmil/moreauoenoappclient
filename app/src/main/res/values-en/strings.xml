@@ -1,2 +1,188 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">MoreauOenologieApp</string>
+    <string name="title_faq">FAQ</string>
+    <string name="title_calcul">Tools</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_resultat">Reports</string>
+
+    <string name="fragment_faq_title">Ceci est le fragment FAQ</string>
+    <string name="fragment_calcul_title">Ceci est le fragment Calcul</string>
+    <string name="fragment_chat_title">Ceci est le fragment Chat</string>
+    <string name="fragment_resultat_title">This is the reports fragment</string>
+
+    <string-array name="arrayMasses">
+        <item>mg</item>
+        <item>g</item>
+        <item>kg</item>
+        <item>t</item>
+    </string-array>
+
+    <string-array name="arrayVolumes">
+        <item>mL</item>
+        <item>cL</item>
+        <item>L</item>
+        <item>hL</item>
+        <item>Pieces</item>
+    </string-array>
+
+    <string-array name="arrayCm1">
+        <item>g/hL</item>
+        <item>g/Pcs</item>
+    </string-array>
+
+    <string-array name="arrayCm2">
+        <item>kg/hL</item>
+        <item>g/hL</item>
+        <item>mg/hL</item>
+    </string-array>
+
+    <string-array name="arrayCv1">
+        <item>cL/hL</item>
+        <item>cL/Pcs</item>
+    </string-array>
+
+    <string-array name="arrayCv2">
+        <item>L/hL</item>
+        <item>cL/hL</item>
+        <item>mL/hL</item>
+    </string-array>
+
+
+    <!-- taux pour convertir 1 gramme en la masse -->
+    <string-array name="arrayTauxMasses">
+        <item>0.001</item>
+        <item>1</item>
+        <item>1000</item>
+        <item>1000000</item>
+    </string-array>
+
+    <!-- taux pour convertir 1 litre en le volume -->
+    <string-array name="arrayTauxVolumes">
+        <item>0.001</item>
+        <item>0.01</item>
+        <item>1</item>
+        <item>100</item>
+        <item>228</item>
+    </string-array>
+
+    <string-array name="arrayTauxCm1">
+        <item>2.28</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="arrayTauxCm2">
+        <item>1000</item>
+        <item>1</item>
+        <item>0.001</item>
+    </string-array>
+
+    <string-array name="arrayTauxCv1">
+        <item>1</item>
+        <item>0.001</item>
+        <item>0.000001</item>
+    </string-array>
+
+    <string-array name="arrayTauxCv2">
+        <item>2.28</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="arrayVolumeCuve">
+        <item>hL</item>
+        <item>Pieces</item>
+    </string-array>
+
+    <string-array name="arrayContrationSulfitage">
+        <item>5%</item>
+        <item>10%</item>
+    </string-array>
+
+    <string-array name="arrayTauxContrationSulfitage">
+        <item>0.1</item>
+        <item>0.05</item>
+    </string-array>
+
+    <!--  FAQ  -->
+    <string name="vinification">WINE MAKING</string>
+    <string name="sucres">My sugars are slowing down, what do I do ?</string>
+    <string name="fermentationAlcoolique">My alcohol fermenting stopped, what should I do</string>
+    <string name="debutFermentation">At the begining of my fermenting, my wine is smelling acetate, acetone, nail polish, what should I do ?</string>
+
+    <string name="elevage">RAISING</string>
+    <string name="bretts">My wine is contaminated by BRETT, what should I do ?</string>
+    <string name="huile">My wine is oily, what should I do ?</string>
+    <string name="fml">FML is not starting, what should I do ?</string>
+    <string name="aciditeVolatile">Volatility acid of my wine is raising, what should I do ?</string>
+    <string name="noix">My wine smells nuts, why and  what should I do ?</string>
+    <string name="moisi">My wine smells like mushroom, what should I do ?</string>
+    <string name="doseS02">What dose of free SO<sub>2</sub> should I maintain during raising ?</string>
+    <string name="s02Actif">What is active SO<sub>2</sub> ? and how to handle it ?</string>
+
+    <string name="preparationALaMise">BOTTLING PROCESS</string>
+    <string name="proteines">My wine contains proteins, which clearing should I use ?</string>
+    <string name="mesureOxygene">What is the interest of measuring the oxygen before the botteling process ?</string>
+    <string name="illiminerOxygene">How to reduce the oxygen in my wine ?</string>
+
+    <string name="vinbio">ORGANIC WINE</string>
+    <string name="questionBio">How to know which onelogist product is allowed for biological wine?</string>
+
+    <string name="effervescent">SPARKLING WINE</string>
+    <string name="questionEffervescent">My bottlesof champagne explode when oppened, what should I do ?</string>
+
+    <string name="liquoreux">LIQUOROUS WINE</string>
+    <string name="questionLiquoreux">My liquorous wine is brewing in the bottle, what should I do ?</string>
+
+    <!-- Calcul -->
+
+    <string name="textAjoutNb">NB: Refer to the technical shettes and ongoing legislation</string>
+    <string name="textAjoutVolumetraiter">Volume to modify</string>
+    <string name="textAjoutValeur">Value</string>
+    <string name="textAjoutHl">hL</string>
+    <string name="textSolide">Solid</string>
+    <string name="textLiquide">Liquid</string>
+    <string name="textMasse">Mass</string>
+    <string name="textResultat">Result</string>
+    <string name="textValeur1">Value 1</string>
+    <string name="textValeur2">Value 2</string>
+    <string name="textVolume">Volume</string>
+    <string name="textConvCm">Mass concentration</string>
+    <string name="textConvCv">Volume concentration</string>
+    <string name="textSulfVolumeCuve">Tank volume</string>
+    <string name="textSulfSo2Ini">Initial SO<sub>2</sub></string>
+    <string name="textSulfSo2Final">Final wished SO<sub>2</sub></string>
+    <string name="textSulfConcentration">Concentration</string>
+    <string name="textSulfQuantite">Quantity</string>
+    <string name="textCalcul">TOOLS</string>
+    <string name="textCalcul1">Tools</string>
+    <string name="textAjout">Addition</string>
+    <string name="textConversion">Conversion</string>
+    <string name="textSulfitage">Sulftitage</string>
+
+    <string name="textChat">Launch chat</string>
+
+    <!-- sign up -->
+    <string name="signUpEmail">New email address</string>
+    <string name="signUpDomain">Enter a domain</string>
+    <string name="signUpMembre">Is part of the company</string>
+    <string name="signUpPassword">New passeword</string>
+    <string name="signUpPasswordOeno">Password</string>
+    <string name="signUp">Create an account</string>
+    <string name="verifiedEmail">Checking email sent to</string>
+    <string name="errorVerrifiedEmail">Impossible to send check email</string>
+    <string name="errorSignUp">Impossible to create new user account</string>
+    <string name="firstName">Name</string>
+    <string name="lastName">Surname</string>
+    <string name="signUpInscription">Sign up</string>
+
+    <!-- log in and sign up-->
+    <string name="required">requis</string>
+    <string name="connexion">Se connecter au chat</string>
+    <string name="loading">Chargement</string>
+    <string name="loginButton">Connexion</string>
+    <string name="create">créer un compte</string>
+    <string name="logInEmail">entrer une adresse email</string>
+    <string name="logInPassword">entrer un mot de passe</string>
+
+</resources>
+
+    <!--        -->

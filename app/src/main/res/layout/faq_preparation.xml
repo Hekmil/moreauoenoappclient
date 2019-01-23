@@ -18,37 +18,44 @@
                 android:id="@+id/textView16"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:alpha="0.7"
                 android:layout_weight="1"
-                android:textAlignment="center"
                 android:gravity="center"
+                android:text="@string/preparationALaMise"
+                android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:text="@string/preparationALaMise" />
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonproteines"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:alpha="0.75"
+                android:text="@string/proteines"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:text="@string/proteines" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/buttonmesureOxygene"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:alpha="0.75"
                 android:layout_weight="1"
+                android:text="@string/mesureOxygene"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:text="@string/mesureOxygene" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/buttonilliminerOxygene"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:alpha="0.75"
                 android:layout_weight="1"
+                android:text="@string/illiminerOxygene"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:text="@string/illiminerOxygene" />
+                android:textSize="18sp" />
 
             <Space
                 android:layout_width="match_parent"

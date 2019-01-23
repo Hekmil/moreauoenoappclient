@@ -19,36 +19,43 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:textAlignment="center"
+                android:alpha="0.7"
                 android:gravity="center"
-                android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:text="@string/vinification" />
+                android:text="@string/vinification"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <Button
-                    android:id="@+id/buttonSucres"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:text="@string/sucres" />
+                android:id="@+id/buttonSucres"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:alpha="0.75"
+                android:layout_weight="1"
+                android:text="@string/sucres"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
 
-                <Button
-                    android:id="@+id/buttonfermentationAlcoolique"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:text="@string/fermentationAlcoolique" />
+            <Button
+                android:id="@+id/buttonfermentationAlcoolique"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:alpha="0.75"
+                android:layout_weight="1"
+                android:text="@string/fermentationAlcoolique"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
 
-                <Button
-                    android:id="@+id/buttondebutFermentation"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:textAppearance="@style/TextAppearance.AppCompat"
-                    android:text="@string/debutFermentation" />
+            <Button
+                android:id="@+id/buttondebutFermentation"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:alpha="0.75"
+                android:layout_weight="1"
+                android:text="@string/debutFermentation"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
 
             <Space
                 android:layout_width="match_parent"

@@ -23,50 +23,51 @@ public class FAQ extends Fragment {
 
         Button butVinification = view.findViewById(R.id.buttonVinification);
         Button butElevage = view.findViewById(R.id.buttonElevage);
-        Button buttonPreparation =  view.findViewById(R.id.buttonPreparation);
+        Button buttonPreparation = view.findViewById(R.id.buttonPreparation);
         Button buttonBio = view.findViewById(R.id.buttonBio);
         Button buttonEffervescent = view.findViewById(R.id.buttonEffervescent);
-        Button buttonLiquoreux =  view.findViewById(R.id.buttonLiquoreux);
+        Button buttonLiquoreux = view.findViewById(R.id.buttonLiquoreux);
 
-        butVinification.setOnClickListener(view1 -> {
-            FragmentTransaction f = getFragmentManager().beginTransaction();
-            f.replace(R.id.fragment, new Vinification());
-            f.commit();
-        });
+        if (MainActivity.triche) {
+            butVinification.setOnClickListener(view1 -> {
+                FragmentTransaction f = getFragmentManager().beginTransaction();
+                f.replace(R.id.fragment, new Vinification());
+                f.commit();
+            });
 
-        butElevage.setOnClickListener(view1 -> {
-            FragmentTransaction f = getFragmentManager().beginTransaction();
-            f.replace(R.id.fragment, new Elevage());
-            f.commit();
-        });
+            butElevage.setOnClickListener(view1 -> {
+                FragmentTransaction f = getFragmentManager().beginTransaction();
+                f.replace(R.id.fragment, new Elevage());
+                f.commit();
+            });
 
-        buttonPreparation.setOnClickListener(view1 -> {
-            FragmentTransaction f = getFragmentManager().beginTransaction();
-            f.replace(R.id.fragment, new Preparation());
-            f.commit();
-        });
+            buttonPreparation.setOnClickListener(view1 -> {
+                FragmentTransaction f = getFragmentManager().beginTransaction();
+                f.replace(R.id.fragment, new Preparation());
+                f.commit();
+            });
 
-        buttonBio.setOnClickListener(view1 -> {
-            FragmentTransaction f = getFragmentManager().beginTransaction();
-            f.replace(R.id.fragment, new Bio());
-            f.commit();
-        });
+            buttonBio.setOnClickListener(view1 -> {
+                FragmentTransaction f = getFragmentManager().beginTransaction();
+                f.replace(R.id.fragment, new Bio());
+                f.commit();
+            });
 
-        buttonEffervescent.setOnClickListener(view1 -> {
-            FragmentTransaction f = getFragmentManager().beginTransaction();
-            f.replace(R.id.fragment, new Effervescent());
-            f.commit();
-        });
+            buttonEffervescent.setOnClickListener(view1 -> {
+                FragmentTransaction f = getFragmentManager().beginTransaction();
+                f.replace(R.id.fragment, new Effervescent());
+                f.commit();
+            });
 
-        buttonLiquoreux.setOnClickListener(view1 -> {
-            FragmentTransaction f = getFragmentManager().beginTransaction();
-            f.replace(R.id.fragment, new Liquoreux());
-            f.commit();
-        });
-
-
+            buttonLiquoreux.setOnClickListener(view1 -> {
+                FragmentTransaction f = getFragmentManager().beginTransaction();
+                f.replace(R.id.fragment, new Liquoreux());
+                f.commit();
+            });
+        }
         return view;
     }
+
 
    /* public void loadFragment(final Fragment fragment){
 

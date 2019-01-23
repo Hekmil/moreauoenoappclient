@@ -10,7 +10,7 @@
     <item
         android:id="@+id/navigation_calcul"
         android:icon="@drawable/ic_pen"
-        android:title="Outils"
+        android:title="@string/textCalcul1"
         android:color="@color/colorBlanc"/>
 
     <item

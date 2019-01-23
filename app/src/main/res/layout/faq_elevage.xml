@@ -19,11 +19,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:alpha="0.7"
                 android:gravity="center"
                 android:text="@string/elevage"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="30sp"
+                android:textSize="36sp"
                 android:textStyle="bold" />
 
             <Button
@@ -31,14 +32,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:alpha="0.75"
                 android:text="@string/bretts"
-                android:textAppearance="@style/TextAppearance.AppCompat" />
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp" />
 
             <Button
                 android:id="@+id/buttonaciditeVolatile"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:alpha="0.75"
                 android:text="@string/aciditeVolatile"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
@@ -47,6 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:alpha="0.75"
                 android:text="@string/moisi"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
@@ -55,6 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:alpha="0.75"
                 android:text="@string/s02Actif"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
@@ -63,6 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:alpha="0.75"
                 android:text="@string/doseS02"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
@@ -71,6 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:alpha="0.75"
                 android:text="@string/noix"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
@@ -79,6 +87,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:alpha="0.75"
                 android:text="@string/fml"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
@@ -87,6 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:alpha="0.75"
                 android:text="@string/huile"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 

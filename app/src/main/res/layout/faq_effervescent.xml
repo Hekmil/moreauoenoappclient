@@ -19,20 +19,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:textAlignment="center"
+                android:alpha="0.7"
                 android:gravity="center"
+                android:text="@string/effervescent"
+                android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:text="@string/effervescent" />
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/buttonquestionEffervescent"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:alpha="0.75"
+                android:text="@string/questionEffervescent"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:text="@string/questionEffervescent" />
+                android:textSize="18sp" />
 
             <Space
                 android:layout_width="match_parent"

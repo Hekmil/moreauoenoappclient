@@ -23,19 +23,21 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textSize="30sp"
+                android:textSize="80sp"
                 android:textStyle="bold"
-                android:text="Outils" />
+                android:text="@string/textCalcul"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorRouge"/>
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="pageAjout"
-                android:text="Ajout"
                 android:alpha="0.75"
-                android:textAlignment="center"
+                android:onClick="pageAjout"
+                android:text="@string/textAjout"
+                android:textSize="36sp"
                 android:textStyle="bold"
                 tools:ignore="OnClick" />
 
@@ -46,8 +48,9 @@
                 android:layout_weight="1"
                 android:alpha="0.75"
                 android:onClick="pageConversion"
-                android:text="Conversion"
+                android:text="@string/textConversion"
                 android:textAlignment="center"
+                android:textSize="36sp"
                 android:textStyle="bold"
                 tools:ignore="OnClick" />
 
@@ -58,8 +61,9 @@
                 android:layout_weight="1"
                 android:alpha="0.75"
                 android:onClick="pageSulfitage"
-                android:text="Sulfitage"
+                android:text="@string/textSulfitage"
                 android:textAlignment="center"
+                android:textSize="36sp"
                 android:textStyle="bold"
                 tools:ignore="OnClick" />
         </LinearLayout>

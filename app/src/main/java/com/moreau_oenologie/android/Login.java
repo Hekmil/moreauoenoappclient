@@ -124,7 +124,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 			@Override
 			public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 				user = dataSnapshot.getValue(User.class);
-				Toast.makeText(Login.this, user.firstName + " " + user.lastName, Toast.LENGTH_SHORT).show();
 			}
 
 			@Override
